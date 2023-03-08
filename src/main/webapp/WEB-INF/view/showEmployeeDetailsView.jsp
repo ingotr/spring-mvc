@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Александр
@@ -25,6 +26,11 @@
         <h3>Your department: ${employee.department}</h3>
         <br>
         <h3>Your car: ${employee.carBrend}</h3>
+        <ul>
+            <c:forEach var="lang" items="${employee.languages}">
+                <li>${lang}</li>
+            </c:forEach>
+        </ul>
 
     </div>
 </body>
