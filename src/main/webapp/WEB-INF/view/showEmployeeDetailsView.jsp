@@ -23,6 +23,9 @@
         <h3>Your salary: ${employee.salary}</h3>
         <br>
         <h3>Your department: ${employee.department}</h3>
+        <br>
+        <h3>Your car: ${employee.carBrend}</h3>
+
     </div>
 </body>
 </html>
