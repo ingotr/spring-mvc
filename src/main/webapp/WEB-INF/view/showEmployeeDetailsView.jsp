@@ -32,7 +32,7 @@
                 <li>${lang}</li>
             </c:forEach>
         </ul>
-
+        <p>Your phone number: ${employee.phoneNumber}</p>
     </div>
 </body>
 </html>

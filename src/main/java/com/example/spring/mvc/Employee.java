@@ -1,9 +1,6 @@
 package com.example.spring.mvc;
 
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,6 +18,8 @@ public class Employee {
     private Map<String, String> carBrends;
     private String[] languages;
     private Map<String, String> languagesList;
+    @Pattern(regexp = "\\d{3}-\\d{2}-\\d{2}", message = "please user pattern xxx-xx-xx")
+    private String phoneNumber;
 
     public Employee() {
         departments = new HashMap<>();
@@ -38,6 +37,14 @@ public class Employee {
         languagesList.put("French", "FR");
         languagesList.put("Deutch", "DE");
 
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public String getName() {
@@ -111,6 +118,7 @@ public class Employee {
     public void setLanguagesList(Map<String, String> languagesList) {
         this.languagesList = languagesList;
     }
+
 
     @Override
     public String toString() {
