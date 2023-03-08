@@ -18,10 +18,11 @@
     <div>
         <h3>Your name: ${employee.name}</h3>
         <br>
-        <h2>Your surname: ${employee.surname}</h2>
+        <h3>Your surname: ${employee.surname}</h3>
         <br>
-        <h2>Your salary: ${employee.salary}</h2>
+        <h3>Your salary: ${employee.salary}</h3>
         <br>
+        <h3>Your department: ${employee.department}</h3>
     </div>
 </body>
 </html>
